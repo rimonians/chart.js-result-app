@@ -1,5 +1,5 @@
 // API
-const api = "../data.json";
+const api = "https://raw.githubusercontent.com/rimonians/chart.js-result-app/main/data.json";
 
 // Select element
 const searchInput = document.querySelector("#searchInput");
