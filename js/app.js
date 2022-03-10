@@ -85,7 +85,7 @@ const printResult = (credential) => {
 searchBtn.addEventListener("click", () => {
   const chartType = chartTypes.find((el) => el.classList.contains("active"));
   const searchInputValue = Number(searchInput.value);
-  fetchData(searchInputValue, chartType.value);
+  fetchData(searchInputValue, "radar");
 });
 
 // Update chart type
