@@ -1,5 +1,5 @@
 // API
-const api = "https://raw.githubusercontent.com/rimonians/chart.js-result-app/main/data.json";
+const api = "../data.json";
 
 // Select element
 const searchInput = document.querySelector("#searchInput");
@@ -84,8 +84,9 @@ const printResult = (credential) => {
 // Set event listener
 searchBtn.addEventListener("click", () => {
   const chartType = chartTypes.find((el) => el.classList.contains("active"));
+  const type = chartType?chartType.value:"line";
   const searchInputValue = Number(searchInput.value);
-  fetchData(searchInputValue, "radar");
+  fetchData(searchInputValue,type);
 });
 
 // Update chart type
