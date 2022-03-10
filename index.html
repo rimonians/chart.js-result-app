@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chart JS Result App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/chart.min.js" defer></script>
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <!-- Container start -->
+    <div class="container">
+      <!-- Heading start -->
+      <div class="heading">
+        <h1>Chart JS Result App</h1>
+      </div>
+      <!-- Heading end -->
+      <!-- Search start -->
+      <div class="search">
+        <input
+          id="searchInput"
+          type="number"
+          spellcheck="false"
+          placeholder="Enter your roll number (ex:545654)"
+        />
+        <input id="searchBtn" type="submit" value="See Result" />
+      </div>
+      <!-- Search end -->
+      <!-- Preview start -->
+      <div class="preview">
+        <!-- Chart type start -->
+        <div class="chartType">
+          <button class="active" value="line">Line</button>
+          <button value="radar">Radar</button>
+          <button value="bar">Bar</button>
+          <button value="doughnut">Doughnut</button>
+          <button value="pie">Pie</button>
+        </div>
+        <!-- Chart type end -->
+        <!-- Chart container start -->
+        <div class="chartContainer">
+          <canvas id="chart"></canvas>
+        </div>
+        <!-- Chart container end -->
+        <!-- Result container start -->
+        <div class="resultContainer">
+          <div class="result"></div>
+        </div>
+        <!-- Result container end -->
+      </div>
+      <!-- Preview end -->
+      <!-- Not found start -->
+      <div class="notFound">
+        <h3>Result not found for this roll</h3>
+      </div>
+      <!-- Not found end -->
+    </div>
+    <!-- Container end -->
+  </body>
+</html>
